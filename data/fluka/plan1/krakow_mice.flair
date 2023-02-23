@@ -1,0 +1,1998 @@
+#!/usr/local/flair/flair
+# FLUKA Project file
+Version: 2
+Title: Mouse experiment from 2016
+Input: krakow_mice.inp
+Exec: flukadpm3
+Submit: Torque
+Notes:
+January 2016,
+Tabs: 0.1 0.32 0.56 0.81 1.0
+Page: Plot
+DefMain: True
+LinkPrg: lfluka
+F77bound: True
+F77dline: False
+
+# Run information
+Run: <default>
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456247842
+	Family:  krakow_mice_aa krakow_mice_ab krakow_mice_ac krakow_mice_ad krakow_mice_ae krakow_mice_af krakow_mice_ag krakow_mice_ah krakow_mice_ai krakow_mice_aj krakow_mice_ak krakow_mice_al krakow_mice_am krakow_mice_an krakow_mice_ao krakow_mice_ap krakow_mice_aq krakow_mice_ar krakow_mice_as krakow_mice_at krakow_mice_au krakow_mice_av krakow_mice_aw krakow_mice_ax krakow_mice_ay krakow_mice_az krakow_mice_ba krakow_mice_bb krakow_mice_bc krakow_mice_bd krakow_mice_be
+
+	# USRxxx data file: krakow_mice_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_aa
+	Rnd:      1
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248289
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_aa_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aa_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aa_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aa_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aa_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ab
+	Rnd:      2
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248290
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ab_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ab_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ab_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ab_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ab_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ac
+	Rnd:      3
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248291
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ac_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ac_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ac_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ac_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ac_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ad
+	Rnd:      4
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248291
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ad_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ad_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ad_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ad_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ad_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ae
+	Rnd:      5
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248292
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ae_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ae_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ae_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ae_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ae_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_af
+	Rnd:      6
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248293
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_af_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_af_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_af_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_af_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_af_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ag
+	Rnd:      7
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248294
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ag_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ag_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ag_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ag_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ag_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ah
+	Rnd:      8
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248295
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ah_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ah_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ah_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ah_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ah_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ai
+	Rnd:      9
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248296
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ai_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ai_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ai_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ai_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ai_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_aj
+	Rnd:      10
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248297
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_aj_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aj_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aj_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aj_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aj_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ak
+	Rnd:      11
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248298
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ak_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ak_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ak_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ak_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ak_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_al
+	Rnd:      12
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248299
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_al_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_al_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_al_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_al_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_al_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_am
+	Rnd:      13
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248300
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_am_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_am_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_am_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_am_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_am_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_an
+	Rnd:      14
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248302
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_an_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_an_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_an_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_an_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_an_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ao
+	Rnd:      15
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248303
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ao_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ao_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ao_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ao_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ao_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ap
+	Rnd:      16
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248304
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ap_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ap_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ap_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ap_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ap_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_aq
+	Rnd:      17
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248306
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_aq_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aq_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aq_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aq_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aq_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ar
+	Rnd:      18
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248307
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ar_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ar_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ar_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ar_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ar_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_as
+	Rnd:      19
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248309
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_as_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_as_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_as_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_as_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_as_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_at
+	Rnd:      20
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248311
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_at_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_at_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_at_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_at_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_at_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_au
+	Rnd:      21
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248312
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_au_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_au_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_au_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_au_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_au_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_av
+	Rnd:      22
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248314
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_av_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_av_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_av_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_av_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_av_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_aw
+	Rnd:      23
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248316
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_aw_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aw_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aw_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aw_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_aw_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ax
+	Rnd:      24
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248317
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ax_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ax_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ax_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ax_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ax_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ay
+	Rnd:      25
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248319
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ay_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ay_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ay_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ay_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ay_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_az
+	Rnd:      26
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248321
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_az_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_az_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_az_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_az_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_az_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_ba
+	Rnd:      27
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248323
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_ba_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ba_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ba_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ba_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_ba_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_bb
+	Rnd:      28
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248325
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_bb_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bb_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bb_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bb_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bb_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_bc
+	Rnd:      29
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248327
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_bc_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bc_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bc_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bc_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bc_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_bd
+	Rnd:      30
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248329
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_bd_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bd_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bd_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bd_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_bd_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Run information
+Run: krakow_mice_be
+	Rnd:      31
+	Exe:      flukadpm3
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1456248331
+	Parent:    <default>
+
+	# USRxxx data file: krakow_mice_be_21.bnn
+	Data: \I_\U.\e
+		Unit: 21
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_be_22.bnn
+	Data: \I_\U.\e
+		Unit: 22
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_be_23.bnn
+	Data: \I_\U.\e
+		Unit: 23
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_be_30.bnn
+	Data: \I_\U.\e
+		Unit: 30
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+
+	# USRxxx data file: krakow_mice_be_31.bnn
+	Data: \I_\U.\e
+		Unit: 31
+		Type: b
+		Rule: +,\I\d\d\d_fort\.\U
+		Rule: +,\I\d\d\d_ftn\.\U
+	End
+End
+
+# Geometry Information
+Geometry:
+	Frame.bsplit: 0.99
+	Frame.tsplit: 0.5
+	Frame.vsplit: 0.469072164948
+End
+
+# Pet
+Pet: pet
+End
+
+# Geometry plot "GeoViewer Red plot"
+Plot: Red
+	Format: .eps
+	Type:   Geometry
+	labels: 1
+	cbcolors: 0
+	title: GeoViewer Red plot
+	extends: 23.2568 17.4945
+	grid: 0
+	cbpalette: FLUKA
+	coord: X-Y
+	y2tics: 0
+	x2log: False
+	index: 0
+	subtype: Material
+	y2log: False
+	boundaries: 1
+	ztics: 0
+	cblog: False
+	origin: -11.4213 -5.78063 4.08843
+	cbround: 0
+	ylog: False
+	zlog: False
+	cbtics: 0
+	layer: Media
+	cpd: 0
+	xlog: False
+	basisu: 1 0 0
+	basisv: 0 1 0
+	x2tics: 0
+End
+
+# Geometry plot "GeoViewer Green plot"
+Plot: Green
+	Format: .eps
+	Type:   Geometry
+	origin: -0.731852 6.94444 61.2218
+	layer: Media
+	title: GeoViewer Green plot
+	labels: 1
+	coord: Z-X
+	boundaries: 1
+	subtype: Material
+	extends: 69.4444 52.3552
+	basisu: 0 0 1
+	basisv: 1 0 0
+End
+
+# Geometry plot "GeoViewer Blue plot"
+Plot: Blue
+	Format: .eps
+	Type:   Geometry
+	origin: -8.88178e-16 -3.15041 11.9287
+	layer: Media
+	title: GeoViewer Blue plot
+	labels: 1
+	coord: Z-Y
+	boundaries: 1
+	subtype: Material
+	extends: 33.4898 14.5198
+	basisu: 0 0 1
+	basisv: 0 1 0
+End
+
+# Geometry plot "GeoViewer Magenta plot"
+Plot: Magenta
+	Format: .eps
+	Type:   Geometry
+	labels: 1
+	cbcolors: 0
+	title: GeoViewer Magenta plot
+	extends: 100 5500
+	grid: 0
+	cbpalette: FLUKA
+	coord: X-Y
+	y2tics: 0
+	x2log: False
+	index: 0
+	subtype: Material
+	y2log: False
+	boundaries: 1
+	ztics: 0
+	cblog: False
+	origin: 0 0 0
+	cbround: 0
+	ylog: False
+	zlog: False
+	cbtics: 0
+	layer: Media
+	cpd: 0
+	xlog: False
+	basisu: -1 0 0
+	basisv: 0 1 0
+	x2tics: 0
+End
+
+# USRBIN plot "USRBIN krakow mice 21"
+Plot: krakow_mice_21_plot
+	Format: .eps
+	Type:   USRBIN
+	lw.0: 0
+	cbcolors: 30
+	title: USRBIN krakow mice 21
+	swap: 0
+	grid: 0
+	geo: -Auto-
+	datafile: krakow_mice_21.bnn
+	cbpalette: FLUKA
+	x2log: False
+	with.0: errorbars
+	index: 0
+	errors: 0
+	axes: Auto
+	y2log: False
+	hist: 2D Projection
+	proj: Y
+	zrebin: 1
+	ztics: 0
+	cblog: True
+	cbround: 0
+	ylog: False
+	zlog: False
+	xrebin: 1
+	int: 2.8982772928098217E-002
+	ps.0: 0
+	yrebin: 1
+	y2tics: 0
+	cbtics: 1
+	det: 1
+	pt.0: 0
+	cpd: 0
+	xlog: False
+	min: 6.84652016E-18
+	max: 2.96143524E-04
+	x2tics: 0
+End
+
+# USRBIN plot "USRBIN krakow mice 22"
+Plot: krakow_mice_22_plot
+	Format: .eps
+	Type:   USRBIN
+	lw.0: 0
+	cbcolors: 30
+	title: USRBIN krakow mice 22
+	swap: 0
+	grid: 0
+	geo: -Auto-
+	datafile: krakow_mice_22.bnn
+	cbpalette: FLUKA
+	x2log: False
+	with.0: errorbars
+	index: 0
+	errors: 0
+	axes: Auto
+	y2log: False
+	hist: 2D Projection
+	proj: X
+	zrebin: 1
+	ztics: 0
+	cblog: True
+	cbround: 0
+	ylog: False
+	zlog: False
+	xrebin: 1
+	ps.0: 0
+	yrebin: 1
+	y2tics: 0
+	cbtics: 1
+	det: 1
+	pt.0: 0
+	int: 1.1839408398475320E-002
+	cpd: 0
+	xlog: False
+	min: 6.64249855E-17
+	max: 2.96249840E-04
+	x2tics: 0
+End
+
+# USRBIN plot "USRBIN krakow mice 23"
+Plot: krakow_mice_23_plot
+	Format: .eps
+	Type:   USRBIN
+	lw.0: 0
+	cbcolors: 30
+	title: USRBIN krakow mice 23
+	swap: 0
+	grid: 0
+	geo: -Auto-
+	datafile: krakow_mice_23.bnn
+	cbpalette: FLUKA
+	x2log: False
+	with.0: errorbars
+	index: 0
+	errors: 0
+	axes: Auto
+	y2log: False
+	hist: 2D Projection
+	proj: Z
+	zrebin: 1
+	ztics: 0
+	cblog: True
+	cbround: 0
+	ylog: False
+	zlog: False
+	xrebin: 1
+	ps.0: 0
+	yrebin: 1
+	y2tics: 0
+	cbtics: 1
+	det: 1
+	pt.0: 0
+	int: 7.1797826145541272E-003
+	cpd: 0
+	xlog: False
+	min: 3.00633851E-18
+	max: 1.72758198E-04
+	x2tics: 0
+End
+
+# USRBIN plot "USRBIN krakow mice 30"
+Plot: krakow_mice_30_plot
+	Format: .eps
+	Type:   USRBIN
+	lw.0: 0
+	cbcolors: 30
+	title: USRBIN krakow mice 30
+	swap: 0
+	grid: 0
+	geo: -Auto-
+	datafile: krakow_mice_30.bnn
+	cbpalette: FLUKA
+	x2log: False
+	with.0: errorlines
+	bxmin: 0
+	index: 0
+	errors: 0
+	axes: Auto
+	y2log: False
+	hist: 1D Projection
+	bxmax: 16.5
+	proj: Z
+	zrebin: 1
+	ztics: 0
+	cblog: False
+	cbround: 0
+	ylog: False
+	zlog: False
+	xrebin: 1
+	int: 6.5479938677274736E-004
+	bymin: -1
+	ps.0: 0
+	yrebin: 1
+	y2tics: 0
+	cbtics: 1
+	det: 1
+	bymax: 1.5
+	pt.0: 0
+	cpd: 0
+	xlog: False
+	min: 2.60540727E-08
+	max: 2.87477305E-04
+	x2tics: 0
+End
+
+# USRBIN plot "USRBIN krakow mice 31"
+Plot: krakow_mice_31_plot
+	Format: .eps
+	Type:   USRBIN
+	lw.0: 0
+	cbcolors: 30
+	title: USRBIN krakow mice 31
+	swap: 0
+	grid: 0
+	geo: -Auto-
+	datafile: krakow_mice_31.bnn
+	cbpalette: FLUKA
+	x2log: False
+	with.0: errorbars
+	bxmin: 0.05
+	index: 0
+	errors: 0
+	axes: Auto
+	y2log: False
+	hist: 1D Projection
+	bxmax: 15
+	proj: Z
+	zrebin: 1
+	ztics: 0
+	cblog: False
+	cbround: 0
+	ylog: False
+	zlog: False
+	xrebin: 1
+	bymin: -1
+	ps.0: 0
+	yrebin: 1
+	y2tics: 0
+	cbtics: 1
+	det: 1
+	bymax: 1
+	pt.0: 0
+	int: 5.0698313519254613E-002
+	cpd: 0
+	xlog: False
+	min: 4.14057638E-07
+	max: 1.99711360E-02
+	x2tics: 0
+End

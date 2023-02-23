@@ -1,0 +1,65 @@
+TITLE
+Mouse experiment from 2016
+* Set the defaults for precision simulations
+DEFAULTS                                                              HADROTHE
+SOURCE
+* Define the beam characteristics
+BEAM           -0.15    -0.008       0.0                              PROTON
+* Nozzle distance to isocenter: 54 cm. Phantom entrance located at (0,0,0) here, isocenter apr. (0,0,7.2)
+BEAMPOS                            -46.8
+GEOBEGIN                                                              COMBNAME
+    0    0          
+* Black body
+SPH blkbody    0.0 0.0 0.0 100000.0
+* Void sphere
+SPH void       0.0 0.0 0.0 10000.0
+RPP pmma       -31.5 13.3 -17. 8. 0.0 34.35
+RPP airfill    -30.5 12.3 1.7 8. 0.95 33.35
+RPP shield     -10. 10. 2.2 7.0 3.65 5.65
+RPP pmmatop    -12.4 12.3 1.7 2.2 0.95 19.2
+RPP water      -30.5 12.3 -16.0 1.7 0.95 33.35
+RPP air        -100. 100. -100. 100. -100. 100.
+END
+* Black hole
+BLKBODY      5 +blkbody -void
+* Void around
+VOID         5 +void -air
+* Target
+AIR          5 +air -pmma
+* Target
+AIRFILL      5 +airfill -pmmatop -shield
+* Target
+SHIELD       5 +shield
+* Target
+WATER        5 +water
+* Target
+PMMA         5 +pmma -water -airfill
+* Target
+PMMATOP      5 +pmmatop
+END
+GEOEND
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+ASSIGNMA    BLCKHOLE   BLKBODY
+ASSIGNMA      VACUUM      VOID
+ASSIGNMA         AIR       AIR
+ASSIGNMA         AIR   AIRFILL
+ASSIGNMA        PMMA      PMMA
+ASSIGNMA        PMMA   PMMATOP
+ASSIGNMA       WATER     WATER
+MAT-PROP                0.9970               WATER     WATER
+ASSIGNMA        IRON    SHIELD
+USRBIN           10.      DOSE      -21.       30.       0.5       35.Yplane
+USRBIN          -35.      -0.5       -5.      300.        1.      200. &
+USRBIN           10.      DOSE      -22.       0.5       35.       35.Xplane
+USRBIN          -0.5      -35.       -5.        1.      300.      200. &
+USRBIN           10.      DOSE      -23.       30.       35.      0.95Entrance
+USRBIN          -35.      -35.       0.0      300.      300.        1. &
+USRBIN           10.      DOSE      -30.       0.5       0.5       15.DDC
+USRBIN          -0.5      -0.5       0.0        1.        1.      150. &
+USRBIN           10.    PROTON      -31.       0.5       0.5       15.Fluence
+USRBIN          -0.5      -0.5       0.0        1.        1.      150. &
+* Set the random number seed
+RANDOMIZ         1.0
+* Set the number of primary histories to be simulated in the run
+START        200000.
+STOP
