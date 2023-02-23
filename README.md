@@ -30,7 +30,7 @@ This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple t
 - until surface of the PMMA lid, i.e.: Y: [-160.5; +19.5] mm
 
 # Brass collimator:
-- X-width: 123.7 mm Relative to isocenter: [-82.0; +41,7] mm can be shifted up to +3 mm, not precise
+- X-width: 123.7 mm Relative to isocenter: [-82.0; +41.7] mm can be shifted up to +3 mm, not precise
 - Y-width:  46.0 mm Relative to isocenter: [+14.5; +60.5] mm can be adjusted, here matched PMMA lid underside
 - Z-width:  19.5 mm Relative to isocenter: [+37.5; +57.0] mm at position 1, follows pos 1-8 in 4 mm steps.
 
@@ -42,3 +42,4 @@ This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple t
 - 8 positions along z axis, measured from phantom surface where beam enters:
   - first bin: [65.0; 69.0] mm  (position 1)
   - last bin: [97.0; 101.0] mm  (position 8)
+  - lateral scoring width is 1 cm along X and Y for good statistics and safely assuming lateral equilibrium
