@@ -43,7 +43,7 @@ Filter
 # ------- Select for scoring using water stopping power ----------
 Settings
         Name in_Water
-        Medium 4
+        Medium 3
 
 # -------- Select what to score and output files ------------
 Output
