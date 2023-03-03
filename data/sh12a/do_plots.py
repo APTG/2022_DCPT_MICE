@@ -221,16 +221,24 @@ tg_mask = tg_dw_rel > 1
 
 z0_lim = z0[tg_mask]
 
-tg_dlw0 = dtgw[1][:, 3][tg_mask] * 1.0  # dlet to water all
-tg_dlw1 = dtgw[3][:, 3][tg_mask] * 1.0  # dlet to water protons
-
-print(tg_dlw0)
+tg_dlw0 = dtgw[1][:, 3][tg_mask] * 0.1  # dlet to water all
+tg_dlw1 = dtgw[3][:, 3][tg_mask] * 0.1  # dlet to water protons
 
 tg_dq0 = dtg[8][:, 3][tg_mask]   # qeff all
 tg_tq0 = dtg[11][:, 3][tg_mask]   # qeff all
 
-print(zt)
-print(z0)
+# make a table with position results
+pos = np.arange(1, 9, dtype=int)
+res = np.vstack([pos, zt, tg_dw_rel, dtgw[1][:, 3]*0.1, dtgw[3][:, 3]*0.1, dtg[8][:, 3], dtg[11][:, 3]])
+lab = ["Position #", "Position [cm]", "Dose [%]",
+       "dLET,w,all [keV/um]", "dLET,w,prot [keV/um]",
+       "dQeff,all", "tQeff,all"]
+np.set_printoptions(precision=2, suppress=True)
+
+for i, d in enumerate(res):
+    print("{:} {:}".format(lab[i], d))
+
+
 
 fig = plt.figure()
 ax = fig.subplots()
