@@ -48,7 +48,7 @@ This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple t
 Noinal PTV extension, relative to isocenter, beam traveling along Z axis. Y is vertical, positive upwards.
 - x = [-50.0; 50.0] mm
 - y = [-12.5;  7.5] mm
-- z = [-50.0; 85.0] mm
+- z = [ 50.0; 85.0] mm
 
 ## Directory structure
 https://drivendata.github.io/cookiecutter-data-science/
