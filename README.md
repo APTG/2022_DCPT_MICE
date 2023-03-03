@@ -43,3 +43,11 @@ This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple t
   - first bin: [65.0; 69.0] mm  (position 1)
   - last bin: [97.0; 101.0] mm  (position 8)
   - lateral scoring width is 1 cm along X and Y for good statistics and safely assuming lateral equilibrium
+
+## PTV
+- x = [-50.0; 85.0] mm
+- y = [-12.5;  7.5] mm
+- z = [-50.0; 50.0] mm
+
+## Directory structure
+https://drivendata.github.io/cookiecutter-data-science/
