@@ -3,5 +3,5 @@
 *.log
 for???
 *.bdo
-*NB*.png
+#*NB*.png
 VERSION
