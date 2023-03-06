@@ -12,7 +12,7 @@ This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple t
 - Z-width: 344.5 mm Relative to isocenter: [   0.0; +344.5] mm
 
 ## Wall Thickness
-- All 0.95 mm, except for YZ wall at positive X, which is 1.05 mm.
+- All 9.5 mm, except for YZ wall at positive X, which is 10.5 mm.
 
 ## PMMA lid
 - A PMMA plate act as a lid which may holds three mice over water.
