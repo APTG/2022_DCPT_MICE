@@ -63,7 +63,8 @@ ftgw = ("NB_target_water__p1.txt",
 ql = ("DQeff all", "DQeff prim", "DQeff prot", "TQeff all", "TQeff prim", "TQeff prot")
 ll = ("DLETeff all", "DLET prim", "DLET prot", "TLET all", "TLET prim", "TLET prot")
 
-icm = "../resources/measurements/"
+path_ic_s = "../resources/measurements/20230426_Semiflex.dat"
+path_ic_m = "../resources/measurements/20230428_AdvMarkus.dat"
 
 ptv_z_nominal = (5.5, 8.5)
 ptv_z = (5.5, 8.3)
@@ -71,6 +72,10 @@ z_max = 10.0  # cm
 d_max = 100.0  # max y scale for dose in %
 dq_max = 400
 dl_max = 20
+
+ic_semiflex_zshift = -0.30  # cm
+ic_semiflex_dscale = 1.005
+ic_markus_dscale = 1.025
 
 majticks = 5
 minticks = majticks*2
@@ -87,10 +92,18 @@ l_minticks = np.arange(0, dl_max+1, dl_max/minticks)
 q_minticks = np.arange(0, dq_max+1, dq_max/minticks)
 
 dw = np.loadtxt(os.path.join(rdir, fdw))
+d_ic_s = np.loadtxt(path_ic_s)
+d_ic_m = np.loadtxt(path_ic_m)
 
 z = dw[:, 0]
+z_ic_m = d_ic_m[:, 0]
+z_ic_s = d_ic_s[:, 0] + ic_semiflex_zshift
+
 dose_w = dw[:, 1]
 dose_w_err = dw[:, 2]
+dose_ic_m = d_ic_m[:, 1] * ic_markus_dscale
+dose_ic_s = d_ic_s[:, 1] * ic_semiflex_dscale
+
 fill_x = [ptv_z[0], ptv_z[1]]
 fill_y = [d_max*ff, d_max*ff]
 
@@ -120,7 +133,7 @@ for i, fn in enumerate(ftgw):
     p = os.path.join(rdir, fn)
     dtgw.append(np.loadtxt(p))
 
-
+# ---------------------------------- Qeff plot
 fig = plt.figure()
 ax = fig.subplots()
 ax.fill_between(fill_x, fill_y, 0, alpha=.2)
@@ -160,6 +173,8 @@ fig.legend(loc=(0.15, 0.6))
 fig.savefig("proton_qeff.png")
 
 # LET
+
+# ---------------------------------- LET plot
 fig = plt.figure()
 ax = fig.subplots()
 ax.fill_between(fill_x, fill_y, 0, alpha=.2)
@@ -182,7 +197,7 @@ ax.set_ylabel('Relative dose [%]')
 ax.set_yticks(d_majticks)
 ax.set_yticks(d_minticks, minor=True)
 ax.set_ylim([0, d_max*ff])
-ax.plot(z, dose_w_rel, linewidth=0.5, label="Dose")
+ax.plot(z, dose_w_rel, linewidth=0.5, label="MC Dose")
 
 ax2 = ax.twinx()
 ax2.set_ylabel('LET [keV/um]')
@@ -258,7 +273,7 @@ np.set_printoptions(precision=2, suppress=True)
 for i, d in enumerate(res):
     print("{:} {:}".format(lab[i], d))
 
-
+# ---------------------------------- Mouse positions
 fig = plt.figure()
 ax = fig.subplots()
 ax.step(z0, tg_dw_rel, label="Dose")
@@ -280,4 +295,37 @@ ax2.set_ylabel('LET [keV/um]')
 ax2.step(z0_lim, tg_dlw0, label="dLET,w,all", color="tab:orange")
 ax2.fill_between(z0_lim, tg_dlw0, 0, alpha=0.1, step='pre', color="tab:orange")
 fig.legend(loc=(0.65, 0.7))
-fig.savefig("foobar.png")
+fig.savefig("mouse_positions.png")
+
+
+# ---------------------------------- measured dose plot
+fig = plt.figure()
+ax = fig.subplots()
+ax.fill_between(fill_x, fill_y, 0, alpha=.2)
+
+# nominal mouse leg positions
+for i in range(8):
+    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
+    myy = [103.0, 103.0]
+    myy2 = [104.0, 104.0]
+    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+
+
+ax.grid(True)
+ax.grid(which='minor', alpha=0.2)
+# ax.tick_params(axis='x', which='minor')
+ax.set_xlabel('Depth [cm]')
+ax.set_xticks(z_majticks)
+ax.set_xticks(z_minticks, minor=True)
+ax.set_xlim([0, z_max])
+
+ax.set_ylabel('Relative dose [%]')
+ax.set_ylim([0, d_max*ff])
+ax.set_yticks(d_majticks)
+ax.set_yticks(d_minticks, minor=True)
+ax.plot(z, dose_w_rel, linewidth=0.5, label="MC Dose")
+ax.plot(z_ic_m, dose_ic_m, 's', marker='^', label="IC Adv.Markus")
+ax.plot(z_ic_s, dose_ic_s, 's', marker='x', label="IC Semiflex")
+
+fig.legend(loc=(0.15, 0.6))
+fig.savefig("proton_dose.png")
