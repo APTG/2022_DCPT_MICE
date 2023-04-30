@@ -26,7 +26,7 @@ Geometry Mesh
         Name TARGET            # Narrow scoring along Z (lat. equib)
         X  -1.   1.     1
         Y  -1.   1.     1
-        Z  6.50  10.1   8      # Measured @ DCPT 23.2.2023, 2016-lid rev. 2.2
+        Z  6.50  9.70   8      # Measured @ DCPT 23.2.2023, 2016-lid rev. 2.2. |<-6.5--|--(...)--|--9.7->|
 
 # ------- Define a few useful filters ----------
 Filter

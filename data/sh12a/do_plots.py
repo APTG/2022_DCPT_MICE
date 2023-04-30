@@ -239,7 +239,6 @@ for i, d in enumerate(res):
     print("{:} {:}".format(lab[i], d))
 
 
-
 fig = plt.figure()
 ax = fig.subplots()
 ax.step(z0, tg_dw_rel, label="Dose")
