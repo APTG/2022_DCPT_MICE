@@ -1,4 +1,5 @@
-# file description
+"""foobar"""
+
 import os
 import numpy as np
 import matplotlib.pyplot as plt
@@ -62,6 +63,8 @@ ftgw = ("NB_target_water__p1.txt",
 ql = ("DQeff all", "DQeff prim", "DQeff prot", "TQeff all", "TQeff prim", "TQeff prot")
 ll = ("DLETeff all", "DLET prim", "DLET prot", "TLET all", "TLET prim", "TLET prot")
 
+icm = "../resources/measurements/"
+
 ptv_z_nominal = (5.5, 8.5)
 ptv_z = (5.5, 8.3)
 z_max = 10.0  # cm
@@ -121,6 +124,15 @@ for i, fn in enumerate(ftgw):
 fig = plt.figure()
 ax = fig.subplots()
 ax.fill_between(fill_x, fill_y, 0, alpha=.2)
+
+# nominal mouse leg positions
+for i in range(8):
+    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
+    myy = [103.0, 103.0]
+    myy2 = [104.0, 104.0]
+    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+
+
 ax.grid(True)
 ax.grid(which='minor', alpha=0.2)
 # ax.tick_params(axis='x', which='minor')
@@ -151,6 +163,14 @@ fig.savefig("proton_qeff.png")
 fig = plt.figure()
 ax = fig.subplots()
 ax.fill_between(fill_x, fill_y, 0, alpha=.2)
+
+# nominal mouse leg positions
+for i in range(8):
+    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
+    myy = [103.0, 103.0]
+    myy2 = [104.0, 104.0]
+    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+
 ax.grid(True)
 ax.grid(which='minor', alpha=0.2)
 ax.set_xlabel('Depth [cm]')
@@ -243,6 +263,14 @@ fig = plt.figure()
 ax = fig.subplots()
 ax.step(z0, tg_dw_rel, label="Dose")
 ax.fill_between(z0, tg_dw_rel, 0, alpha=0.2, step='pre')
+
+# nominal mouse leg positions
+for i in range(8):
+    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
+    myy = [103.0, 103.0]
+    myy2 = [104.0, 104.0]
+    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+
 ax.grid(True)
 ax.set_xlabel('Depth [cm]')
 ax.set_ylabel('Relative dose [%]')
