@@ -281,8 +281,8 @@ for i, d in enumerate(res):
 # ---------------------------------- Mouse positions
 fig = plt.figure()
 ax = fig.subplots()
-ax.step(z0, tg_dw_rel, label="Dose")
-ax.fill_between(z0, tg_dw_rel, 0, alpha=0.2, step='pre')
+ax.step(z0, tg_dw_rel, label="Dose", where='post')
+ax.fill_between(z0, tg_dw_rel, 0, alpha=0.2, step='post')
 
 # nominal mouse leg positions
 for i in range(8):
@@ -298,9 +298,16 @@ ax.set_ylabel('Relative dose [%]')
 
 ax2 = ax.twinx()
 ax2.set_ylabel('LET [keV/um]')
-ax2.step(z0_lim, tg_dlw0, label="dLET,w,all", color="tab:orange")
-ax2.fill_between(z0_lim, tg_dlw0, 0, alpha=0.1, step='pre', color="tab:orange")
-fig.legend(loc=(0.65, 0.7))
+ax2.set_ylim([0, 20])
+
+# need to repeat last data point for proper step plotting
+_z = np.append(z0_lim, z0_lim[-1] + 0.4)  # 4 mm wide steps
+_y = np.append(tg_dlw0, tg_dlw0[-1])
+# ax2.step(z0_lim, tg_dlw0, label="dLET,w,all", where='post', color="tab:orange")
+# ax2.fill_between(z0_lim, tg_dlw0, 0, alpha=0.4, step='post', color="tab:orange")
+ax2.step(_z, _y, label="dLET,w,all", where='post', color="tab:orange")
+ax2.fill_between(_z,_y, 0, alpha=0.3, step='post', color="tab:orange")
+fig.legend(loc=(0.25, 0.68))
 fig.savefig("mouse_positions.png")
 
 
