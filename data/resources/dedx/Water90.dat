@@ -1,13 +1,3 @@
-* Stopping power tables calculated with libdEdx, version 1.2.1-svn0
-* by user bassler on host baslup.
-* Date of this calculation: Thu Mar 14 19:53:02 2019
-* Timestamp: 20190314_195302
-* Target material id: 276
-* Target material name: WATER
-* Algorithm: DEDX_PSTAR for z = 1 and DEDX_MSTAR for z > 1
-* Proton, Helium and Carbon data were replaced with ICRU 90 data, 3th March 2023 16:04
-* Helium data, higher energy sill missing, falling back to MSTAR.
-* Energy [MeV/nucleon] dE/dx [MeV cm2/g] for ions 1<=z<=18 
 2.5000E-02 6.1982E+02 1.1310E+03 1.4410E+03 1.9070E+03 2.5080E+03 3.1310E+03 3.5870E+03 3.7470E+03 3.6400E+03 3.4600E+03 3.3310E+03 3.2740E+03 3.5650E+03 4.0660E+03 4.5520E+03 4.8230E+03 4.8250E+03 4.7420E+03
 3.0000E-02 6.6280E+02 1.2398E+03 1.5970E+03 2.1150E+03 2.7830E+03 3.4787E+03 3.9950E+03 4.1940E+03 4.1080E+03 3.9560E+03 3.8540E+03 3.7950E+03 4.1240E+03 4.6790E+03 5.2070E+03 5.4890E+03 5.4640E+03 5.3360E+03
 4.0000E-02 7.2900E+02 1.4264E+03 1.8750E+03 2.4880E+03 3.2750E+03 4.1018E+03 4.7330E+03 5.0140E+03 4.9830E+03 4.9090E+03 4.8770E+03 4.8200E+03 5.2220E+03 5.8770E+03 6.4830E+03 6.7830E+03 6.7060E+03 6.4850E+03

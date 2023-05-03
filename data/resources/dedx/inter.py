@@ -31,4 +31,4 @@ hh = np.concatenate([cs_h(eh[:-8]), cs_h2(eh[-8:])])
 # stack all columns in proper order: energy, proton, helium, lithium,...
 result = np.column_stack([e1, cs_p(ep), hh, d1[:, 3:6], cs_c(ec), d1[:, 7:]])
 
-np.savetxt('Water90.dat', result, fmt="%.3E")
+np.savetxt('Water90.dat', result, fmt="%.4E")
