@@ -1,7 +1,8 @@
 import numpy as np
 from scipy.interpolate import CubicSpline
 
-d1 = np.loadtxt("Water0.txt", comments='*')
+d1 = np.loadtxt("Air0.txt", comments='*')
+# d1 = np.loadtxt("Water0.txt", comments='*')
 d2 = np.loadtxt("icru90.dat", comments='#')
 
 e1 = d1[:, 0]  # old energy grid in MeV/nucl
@@ -14,9 +15,14 @@ eh = e1 * 4
 ec = e1 * 12
 
 # extract columns for protons, helium and carbon in liquid water
-pw90 = d2[:, 9]
-hw90 = d2[:, 12]
-cw90 = d2[:, 15]
+# pw90 = d2[:, 9]
+# hw90 = d2[:, 12]
+# cw90 = d2[:, 15]
+
+# air:
+pw90 = d2[:, 7]
+hw90 = d2[:, 10]
+cw90 = d2[:, 13]
 
 # splines are all in MeV
 cs_p = CubicSpline(e2, pw90)
@@ -31,4 +37,5 @@ hh = np.concatenate([cs_h(eh[:-8]), cs_h2(eh[-8:])])
 # stack all columns in proper order: energy, proton, helium, lithium,...
 result = np.column_stack([e1, cs_p(ep), hh, d1[:, 3:6], cs_c(ec), d1[:, 7:]])
 
-np.savetxt('Water90.dat', result, fmt="%.4E")
+# np.savetxt('Water90.dat', result, fmt="%.4E")
+np.savetxt('Air90.dat', result, fmt="%.4E")
