@@ -73,9 +73,11 @@ d_max = 100.0  # max y scale for dose in %
 dq_max = 400
 dl_max = 20
 
-ic_semiflex_zshift = -0.275 * 0.75  # cm radius of sens.vol: 2.75 mm. 0.75 Palmans et al 2022.
-ic_semiflex_dscale = 1.005
-ic_markus_dscale = 1.025
+# ic_semiflex_zshift = -0.20625 # [cm] = -0.275 * 0.75 cm radius of sens.vol: 2.75 mm. 0.75 Palmans et al 2022.
+# ic_semiflex_zshift = -0.175  # [cm] half of mean cord length: 4*r/pi * 0.5 = 1.75 mm
+ic_semiflex_zshift = -0.12  # [cm] best fit
+ic_semiflex_dscale = 1.008
+ic_markus_dscale = 1.020
 
 majticks = 5
 minticks = majticks*2
@@ -329,8 +331,8 @@ ax.set_ylim([0, d_max*ff])
 ax.set_yticks(d_majticks)
 ax.set_yticks(d_minticks, minor=True)
 ax.plot(z, dose_w_rel, linewidth=0.5, label="MC Dose")
-ax.plot(z_ic_m, dose_ic_m, 's', marker='^', label="IC Adv.Markus")
-ax.plot(z_ic_s, dose_ic_s, 's', marker='x', label="IC Semiflex")
+ax.scatter(z_ic_m, dose_ic_m, marker='+', label="IC Adv.Markus")
+ax.scatter(z_ic_s, dose_ic_s, marker='x', label="IC Semiflex")
 
-fig.legend(loc=(0.15, 0.6))
+fig.legend(loc=(0.15, 0.7))
 fig.savefig("proton_dose.png")
