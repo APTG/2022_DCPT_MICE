@@ -2,7 +2,7 @@
 JPART0                         2                         # incident particle, 2 = protons
 TMAX0                      165.0         0.0             # Max. incident energy and energy spread [MeV/nucl]
 BEAMPOS                      0.0         0.0      -50.0  # Beam XYZ start pos [cm]
-SAD                         200.0      256.0             # Deflection magnets [cm]
+BEAMSAD                     200.0      256.0             # Deflection magnets [cm]
 USECBEAM        ./plan1_sobp.dat
 
 # Physics parameters
