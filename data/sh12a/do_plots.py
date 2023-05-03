@@ -67,13 +67,13 @@ path_ic_s = "../resources/measurements/20230426_Semiflex.dat"
 path_ic_m = "../resources/measurements/20230428_AdvMarkus.dat"
 
 ptv_z_nominal = (5.5, 8.5)
-ptv_z = (5.5, 8.3)
+ptv_z = (5.5, 8.4)
 z_max = 10.0  # cm
 d_max = 100.0  # max y scale for dose in %
 dq_max = 400
 dl_max = 20
 
-ic_semiflex_zshift = -0.30  # cm
+ic_semiflex_zshift = -0.275 * 0.75  # cm radius of sens.vol: 2.75 mm. 0.75 Palmans et al 2022.
 ic_semiflex_dscale = 1.005
 ic_markus_dscale = 1.025
 
@@ -144,7 +144,7 @@ for i in range(8):
     myy = [103.0, 103.0]
     myy2 = [104.0, 104.0]
     ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
-
+    ax.text(6.5+i*0.4+0.12, 105, str(i+1), alpha=0.2)
 
 ax.grid(True)
 ax.grid(which='minor', alpha=0.2)
@@ -179,13 +179,6 @@ fig = plt.figure()
 ax = fig.subplots()
 ax.fill_between(fill_x, fill_y, 0, alpha=.2)
 
-# nominal mouse leg positions
-for i in range(8):
-    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
-    myy = [103.0, 103.0]
-    myy2 = [104.0, 104.0]
-    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
-
 ax.grid(True)
 ax.grid(which='minor', alpha=0.2)
 ax.set_xlabel('Depth [cm]')
@@ -211,6 +204,16 @@ for i, y in enumerate(dlw):
     ye = y[:, 2][let_mask]*0.1
     ax2.plot(z_lim, yy, label=ll[i])
     ax2.fill_between(z_lim, yy-ye, yy+ye, alpha=0.2)
+
+# nominal mouse leg positions
+for i in range(8):
+    mxx = [6.5+i*0.4 + 0.03, 6.5+(i+1)*0.4 - 0.03]
+    myy = [103.0, 103.0]
+    myy2 = [104.0, 104.0]
+    ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+    ax.text(6.5+i*0.4+0.12, 105, str(i+1), alpha=0.2)
+
+
 fig.legend(loc=(0.15, 0.6))
 fig.savefig("proton_let.png")
 
@@ -285,6 +288,7 @@ for i in range(8):
     myy = [103.0, 103.0]
     myy2 = [104.0, 104.0]
     ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+    ax.text(6.5+i*0.4+0.12, 105, str(i+1), alpha=0.2)
 
 ax.grid(True)
 ax.set_xlabel('Depth [cm]')
@@ -309,6 +313,7 @@ for i in range(8):
     myy = [103.0, 103.0]
     myy2 = [104.0, 104.0]
     ax.fill_between(mxx, myy, myy2, alpha=.2, color='r')
+    ax.text(6.5+i*0.4+0.12, 105, str(i+1), alpha=0.2)
 
 
 ax.grid(True)
