@@ -1,0 +1,75 @@
+#Setup parameters
+#SETUP   1.No of Particles   2.No of Progress interval  3.No of thread 4.Outful file  5. Position  6. Use GUI(0 or 1)
+SETUP  1000000 50000   5  MiceExptSetup.root  1  0
+
+#Physics parameters
+#PHYSICS  1.Physics list   2.Step length 3.Calculate Water Dose 4.SL apply to neutral 5.Pro_cut-Proton
+#6.Pro_cut-Photon  7.Pro_cut-Electron  8.Pro_cut-Positron  9.Pro_cut-Neutron
+PHYSICS  QGSP_BIC_HP_EMY 0.2  1  0  0.02   0.02   0.02   0.02   0.02
+
+#Treatment plan
+#PLAN 1.File 2.Source Position 3.SADx  4.SADy
+PLAN SOBP_Plan.dat  -500.0  2000.0  2560.0
+
+PHAOU  -133.5   316.0   -170.0  79.5    0.0    344.5
+PHAIN  -124.0   305.5   -160.5  79.5    9.5    335.0
+
+WATER  -124.0   305.5   -160.5  19.5    9.5    335.0
+
+COLLT  -82.0    41.7     14.5   60.5   37.5    57.0
+COLLS  -64.5    23.2     28.5   60.5   52.0    57.0
+
+LID    -124.0   124.0     14.5  19.5    9.5    192.5
+
+#Histogram parameters
+#HISTO  1.Quantity  2.Particle   3. Particle Type 4.Water Equivalent  5.Name   6.Title       7.Dimension  8.No x-bins   9.x-min  10.x-max  11.No y-bins   12.y-min    13.y-max  14.No z-bins   15.z-min    16.z-max  17.x    18.y     19.z
+HISTO   dose    All  0  0 PTVDose25         PTVDose     1   1    -2.5     2.5     1   -2.5     2.5      1    55.0    83.0   1
+HISTO   dose    All  0  0 PTVDose50         PTVDose     1   1    -5.0     5.0     1   -5.0     5.0      1    55.0    83.0   1
+HISTO   dose    All  0  0 PTVDose100        PTVDose     1   1    -10.0    10.0    1   -12.5    7.5      1    55.0    83.0   1
+
+HISTO   dose    All  0  0 LonDose25M        CenDose     1   1    -2.5     2.5    1    -2.5      2.5    202     0.0   101.0   3
+HISTO   dose    All  0  1 LonDose25W        CenDose     1   1    -2.5     2.5    1    -2.5      2.5    202     0.0   101.0   3
+HISTO   dose    All  0  0 LonDose50M        CenDose     1   1    -5.0     5.0    1    -5.0      5.0    202     0.0   101.0   3
+HISTO   dose    All  0  1 LonDose50W        CenDose     1   1    -5.0     5.0    1    -5.0      5.0    202     0.0   101.0   3
+HISTO   dose    All  0  0 LonDose100M       CenDose     1   1    -10.0    10.0    1   -12.5     7.5    202     0.0   101.0   3
+HISTO   dose    All  0  1 LonDose100W       CenDose     1   1    -10.0    10.0    1   -12.5     7.5    202     0.0   101.0   3
+HISTO   dose    All  0  0 AveLonDose        AveDose     1   1    -50.0    50.0    1   -12.5     7.5    202     0.0   101.0   3
+
+
+HISTO   fDose   All  0  0 PTVfDose25         PTVDose     1   1    -2.5     2.5     1   -2.5     2.5      1    55.0    83.0   1
+HISTO   fDose   All  0  0 PTVfDose50         PTVDose     1   1    -5.0     5.0     1   -5.0     5.0      1    55.0    83.0   1
+HISTO   fDose   All  0  0 PTVfDose100        PTVDose     1   1    -10.0    10.0    1   -12.5    7.5      1    55.0    83.0   1
+
+HISTO   fDose   All  0  0 LonfDose25M        CenDose     1   1    -2.5     2.5    1    -2.5      2.5    202     0.0   101.0   3
+HISTO   fDose   All  0  1 LonfDose25W        CenDose     1   1    -2.5     2.5    1    -2.5      2.5    202     0.0   101.0   3
+HISTO   fDose   All  0  0 LonfDose50M        CenDose     1   1    -5.0     5.0    1    -5.0      5.0    202     0.0   101.0   3
+HISTO   fDose   All  0  1 LonfDose50W        CenDose     1   1    -5.0     5.0    1    -5.0      5.0    202     0.0   101.0   3
+HISTO   fDose   All  0  0 LonfDose100M       CenDose     1   1    -10.0    10.0    1   -12.5     7.5    202     0.0   101.0   3
+HISTO   fDose   All  0  1 LonfDose100W       CenDose     1   1    -10.0    10.0    1   -12.5     7.5    202     0.0   101.0   3
+HISTO   fDose   All  0  0 AveLonfDose        AveDose     1   1    -50.0    50.0    1   -12.5     7.5    202     0.0   101.0   3
+
+
+HISTO   energy  all     0 1 WatEnergyAll     CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETd   all     0 1 WatLETdAll       CenLETd     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   energy  Proton  0 1 WatEnergyAPro    CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETd   Proton  0 1 WatLonLETdAPro   CenLETd     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   energy  Proton  1 1 WatEnergyPPro    CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETd   Proton  1 1 WatLonLETdPPro   CenLETd     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   energy  Proton  2 1 WatEnergySPro    CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETd   Proton  2 1 WatLonLETdSPro   CenLETd     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+
+HISTO   energy  all     0 1 WatSLAll         CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETt   all     0 1 WatLETtAll       CenLETd     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   SLEN    Proton  0 1 WatSLAPro        CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETt   Proton  0 1 WatLETtAPro      CenLETt     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   SLEN    Proton  1 1 WatSLPPro        CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETt   Proton  1 1 WatLETtPPro      CenLETt     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+
+HISTO   SLEN    Proton  2 1 WatSLSPro        CenEnergy   1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
+HISTO   aLETt   Proton  2 1 WatLETtSPro      CenLETt     1   1    -10.0    10.0    1   -12.5    7.5    202     0.0   101.0   3
