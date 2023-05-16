@@ -1,4 +1,4 @@
-# Mouse Water Phantom "2014-EKO"
+# Mouse Water Phantom "MWP-2014-GSI"
 This phantom was first used in ion beams 2014 at GSI, Darmstadt, then multiple times at IFJ-PAN in Krakow, and later at DCPT in Aarhus.
 
 ## General description
