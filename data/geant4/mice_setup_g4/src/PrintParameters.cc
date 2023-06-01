@@ -203,30 +203,3 @@ void SimulationParameters::PrintWaterInfo(){
        << setw(20)<< "Water z-length = " << setw(8)<<water[5]-water[4]<<"  [mm]" <<G4endl << G4endl  << G4endl;
   return;
   }
-
-void SimulationParameters::PrintCollimatorInfo(){
-  cout << G4endl;
-  cout << setw(40)<< "***------------------------------------------------ Collimator --------------------------------------------***" <<G4endl;
-  cout << G4endl;
-
-  cout<<fixed
-       << setw(25)<< "Collimator x-min = "    << setw(8)<<coll_total[0]
-       << setw(25)<< "Collimator x-max = "    << setw(8)<<coll_total[1]
-       << setw(30)<< "Collimator x-length = " << setw(8)<<coll_total[1]-coll_total[0]<<"  [mm]" << G4endl
-       << setw(25)<< "Collimator y-min = "    << setw(8)<<coll_total[2]
-       << setw(25)<< "Collimator y-max = "    << setw(8)<<coll_total[3]
-       << setw(30)<< "Collimator y-length = " << setw(8)<<coll_total[3]-coll_total[2]<<"  [mm]" << G4endl
-       << setw(25)<< "Collimator z-min = "    << setw(8)<<coll_total[4]
-       << setw(25)<< "Collimator z-max = "    << setw(8)<<coll_total[5]
-       << setw(30)<< "Collimator z-length = " << setw(8)<<coll_total[5]-coll_total[4]<<"  [mm]" << G4endl<< G4endl
-       << setw(25)<< "Spacer x-min = "        << setw(8)<<coll_space[0]
-       << setw(25)<< "Spacer x-max = "        << setw(8)<<coll_space[1]
-       << setw(30)<< "Spacer x-length = "     << setw(8)<<coll_space[1]-coll_space[0]<<"  [mm]" << G4endl
-       << setw(25)<< "Spacer y-min = "        << setw(8)<<coll_space[2]
-       << setw(25)<< "Spacer y-max = "        << setw(8)<<coll_space[3]
-       << setw(30)<< "Spacer y-length = "     << setw(8)<<coll_space[3]-coll_space[2]<<"  [mm]" << G4endl
-       << setw(25)<< "Spacer z-min = "        << setw(8)<<coll_space[4]
-       << setw(25)<< "Spacer z-max = "        << setw(8)<<coll_space[5]
-       << setw(30)<< "Spacer z-length = "     << setw(8)<<coll_space[5]-coll_space[4]<<"  [mm]" << G4endl << G4endl  << G4endl;
-  return;
-}

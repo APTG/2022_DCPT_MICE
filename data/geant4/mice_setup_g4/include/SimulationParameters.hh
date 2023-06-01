@@ -47,7 +47,6 @@ class SimulationParameters
    void PrintContainerInfo();
    void PrintLidInfo();
    void PrintWaterInfo();
-   void PrintCollimatorInfo();
 
    int getcode (std::string const& inString);
    std::vector<std::string> ReadLine(std::string line);
@@ -69,7 +68,7 @@ class SimulationParameters
    vector<double> lid;
    vector<double> coll_total;
    vector<double> coll_space;
-   
+
    int    useWaterEquivalent;
    const string parameters[10] = {"SETUP", "PHYSICS",  "PHASE", "COLLI", "SLICE", "HISTO", "PLAN", "SCAT"};
    const string list_pcut_particle[5] = {"proton", "photon", "e-", "e+", "neutron"};

@@ -44,7 +44,7 @@ int main(int argc,char** argv)
   runManager->SetUserInitialization(new DetectorConstruction(SMP));
 
   G4PhysListFactory physListFactory;
-  const G4String phylistname = "QGSP_BIC_HP_EMY";
+  const G4String phylistname = "QGSP_BIC_EMY";
   G4VModularPhysicsList* physicsList = physListFactory.GetReferencePhysList(phylistname);
   G4StepLimiterPhysics* stepLimitPhys = new G4StepLimiterPhysics();
   if(SMP->GetPhysicsParameters().use_sl_neutral){
@@ -65,9 +65,8 @@ int main(int argc,char** argv)
     // G4VisManager* visManager = new G4VisExecutive("Quiet");
     visManager->SetVerboseLevel(0);
     visManager->Initialize();
-    UImanager->ApplyCommand("/control/macroPath /home/fardous/PhD/Projects/Personal/Proton_Irradiation/proton-irradiation");
+    UImanager->ApplyCommand("/control/macroPath proton-irradiation");
     UImanager->ApplyCommand("/control/execute init_vis.mac");
-    // system("clear");
     ui->SessionStart();
     delete visManager;
     delete ui;

@@ -69,16 +69,16 @@ void SimulationParameters::AssignPlanParameters(std::vector<string> plan){
 
 void SimulationParameters::AssignSpotsParameters(std::vector<string> spt){
   plan_sobp spot;
-  spot.energy   = stod(spt[0])*1000.0;
-  spot.e_spread = stod(spt[1])*1000.0;
-  spot.spotx    = stod(spt[2])*10.0;
-  spot.spoty    = stod(spt[3])*10.0;
-  spot.sig_x    = stod(spt[4])*10.0/2.355;
-  spot.sig_y    = stod(spt[5])*10.0/2.355;
+  spot.energy   = stod(spt[0])*1000.0; // Convert GeV to MeV
+  spot.e_spread = stod(spt[1])*1000.0; // Convert GeV to MeV
+  spot.spotx    = stod(spt[2])*10.0; // Convert cm to mm
+  spot.spoty    = stod(spt[3])*10.0; // Convert cm to mm
+  spot.sig_x    = stod(spt[4])*10.0/2.355; // Convert FWHM(cm) to Sigma(mm)
+  spot.sig_y    = stod(spt[5])*10.0/2.355; // Convert FWHM(cm) to Sigma(mm)
   spot.div_x    = stod(spt[6]);
   spot.div_y    = stod(spt[7]);
-  spot.cov_x    = stod(spt[8])*10.0;
-  spot.cov_y    = stod(spt[9])*10.0;
+  spot.cov_x    = stod(spt[8])*10.0; // Convert cm to mm
+  spot.cov_y    = stod(spt[9])*10.0; // Convert cm to mm
   spot.weight   = stod(spt[10]);
   spots.push_back(spot);
 }

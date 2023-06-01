@@ -4,7 +4,7 @@ using namespace std;
 SimulationParameters::SimulationParameters(int argc, char** argv){
   // Assign input file containing simulation Parameters
   if(argc>1){ file_name = argv[1];}
-  else{file_name = "/home/fardous/PhD/Projects/Mice_Experiment_Old_Setup/SubProject(Cathrine_1st_paper)/test.dat";}
+  else{file_name = "test.dat";}
   AssignInputParameters();
 }
 
@@ -103,7 +103,6 @@ void SimulationParameters::Initialization(std::vector<std::string> data)
       exit(1);}
   }
 }
-
 
 vector<string>  SimulationParameters::ReadLine(string line){
   vector<string> out;
